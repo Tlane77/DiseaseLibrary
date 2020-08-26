@@ -78,9 +78,11 @@ namespace Library
             aVitamin.VitaminHistory = aDisease.History;
             aVitamin.DiseaseName = aDisease.Name;
 
-            // "Record" the sale, by adding it to our SalesHistory list
+            // "Record" the vitamin, by adding it to our VitaninHistory list
             VitaminHistory.Add(aVitamin);
 
+            // We've sold the bike so it's no longer in our inventory
+            Inventory.Add(name);
         }
 
         // Print a simple report that displays all sales information
